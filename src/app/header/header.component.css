@@ -1,0 +1,11 @@
+.headercadre {
+    border: 3px blue double;
+    border-radius: 10px;
+    box-shadow: 6px 6px 0px rgb(17, 187, 17);
+    margin-right:35px;
+     margin-left:35px;
+}
+
+.cliquable {
+    cursor:pointer;
+}

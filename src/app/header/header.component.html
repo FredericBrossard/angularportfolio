@@ -1,0 +1,9 @@
+<div class="headercadre">
+   <ul>
+      <!-- itération-->
+     <li *ngFor= "let m of menuService.list" class="cliquable"  [style.color]="colorvar ? 'red' : 'blue'">        
+    <a (click)="showMenuDetail(m)"> {{ m.nameMenu }} </a>   
+   <!-- <a (click)="showMenuDetail(m)" href=#> {{ m.nameMenu }} </a> -->
+  </li>
+</ul> 
+</div>

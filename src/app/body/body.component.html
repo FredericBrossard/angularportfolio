@@ -1,0 +1,25 @@
+<div class="bodycadre">
+
+  <!-- Appel du service ici en direct -->
+  <!-- <div *ngIf="menuService.selectedMenu">
+      <p>{{ menuService.selectedMenu.nameMenu }}</p>
+      <p>{{ menuService.selectedMenu.textMenu }}</p>
+  </div> -->
+
+  <div [ngSwitch]="menuService.selectedMenu.nameMenu">
+    <div *ngSwitchCase="'Contact'" >
+        <p>{{ menuService.selectedMenu.textMenu }}</p>
+    </div>
+    <div *ngSwitchCase="'Réalisation'" >
+        <p>{{ menuService.selectedMenu.textMenu }}</p>
+    </div>
+    <div *ngSwitchCase="'Biographie'" >
+        <p>{{ menuService.selectedMenu.textMenu }}</p>
+    </div>
+    <div *ngSwitchDefault="" >
+        <p>Error</p>
+    </div>
+    
+  </div> 
+
+</div>
